@@ -12,6 +12,7 @@ var index = require('./routes/index');
 var comparator = require('./routes/comparator');
 var workloadcalc = require('./routes/workloadcalc');
 var courseprofinfo = require('./routes/courseprofinfo');
+var addclasses = require('./routes/addclasses')
 // Example route
 // var user = require('./routes/user');
 
@@ -41,6 +42,7 @@ app.get('/', index.view);
 app.get('/comparator', comparator.viewProject );
 app.get('/workloadcalc', workloadcalc.viewProject);
 app.get('/courseprofinfo',courseprofinfo.viewProject);
+app.get('/workloadcalc/addclasses', addclasses.viewProject)
 // Example route
 // app.get('/users', user.list);
 
