@@ -1,0 +1,69 @@
+body {
+	background-color: #a3dcb4;
+}
+
+h1 {
+	font-size: 10em;
+	margin: 10%;
+	left: -10px;
+	color: #333333;
+	text-align: center;
+}
+
+h2 {
+	font-size: 5em;
+	 margin: 10%;
+	text-align: center;
+}
+
+.coursebox{
+	border: 5px solid black;
+}
+
+.classlist{
+	border: 5px solid black;
+	padding-bottom: 2%;
+	margin-bottom: 4%;
+}
+
+ul {
+list-style-type: none;
+
+}
+li {
+	font-size: 3em;
+	text-align: center;
+
+
+}
+
+
+.totalhourscalc {
+ font-size: 3em;
+}
+
+#addclassbutton {
+ float:right;
+ margin-top: -4.2%;
+ border:2px solid black;
+ color: black;
+ font-size: 2em;
+}
+
+#removeclassbutton {
+ float:left;
+ margin-top: -4.2%;
+ border:2px solid black;
+ color: black;
+ font-size: 2em;
+}
+
+.changeclasses {
+	display: inline;
+}
+
+.changeclasses a {
+	margin-bottom: 5%;
+}
+}
+
