@@ -1,0 +1,8 @@
+.search-container {
+	overflow: hidden;
+}
+
+.search-container input[type=text] {
+	float: center;
+	font-size: 3vw;
+}
