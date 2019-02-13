@@ -1,4 +1,4 @@
-$.getJSON( "data.json", function( json ) {
+$.getJSON( "data/data.json", function( json ) {
     console.log( "JSON Data received, name is " + json.name);
 });
 
