@@ -16,6 +16,13 @@ h2 {
 	text-align: center;
 }
 
+.backButton {
+   background-color: black;
+   color: white;
+   font-size: 4vw;
+   padding: 4vw;
+}
+
 .coursebox {
 	border: 5px solid black;
 }

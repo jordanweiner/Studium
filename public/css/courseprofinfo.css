@@ -4,6 +4,13 @@ h1 {
 	margin: 7vw;
 }
 
+.backButton {
+   background-color: black;
+   color: white;
+   font-size: 4vw;
+   padding: 4vw;
+}
+
 .search-container {
 	overflow: hidden;
 }
