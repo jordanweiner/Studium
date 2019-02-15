@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title>Remove Classes</title>
+
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/removeclasses.css" rel="stylesheet">
+	<link href="css/comparator.css" rel="stylesheet">
+
+	<script src="js/jquery-1.11.0.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/removeclasses.js"></script>
+</head>
+
+<body>
+<div class="container comparator-page">
+	<a class="backButton" onclick="goBack()">Go back</a>
+	<h1>Classes</h1>
+
+	{{#each classes}}
+		<div class = "classes-container" >
+			<h2><strong>{{courseid}}</strong></h2>
+			<h2>{{coursenumber}}</h2>
+		</div>
+	{{/each}}
+</div>
+</body>
+
+</html>
