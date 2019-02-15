@@ -9,6 +9,7 @@ var path = require('path');
 var handlebars = require('express3-handlebars')
 
 var index = require('./routes/index');
+var home = require('./routes/home');
 var comparator = require('./routes/comparator');
 var workloadcalc = require('./routes/workloadcalc');
 var courseprofinfo = require('./routes/courseprofinfo');
@@ -39,6 +40,7 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', index.view);
+app.get('/home', home.view);
 app.get('/comparator', comparator.viewProject );
 app.get('/workloadcalc', workloadcalc.viewProject);
 app.get('/courseprofinfo',courseprofinfo.viewProject);
