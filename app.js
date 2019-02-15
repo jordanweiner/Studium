@@ -42,7 +42,7 @@ app.get('/', index.view);
 app.get('/comparator', comparator.viewProject );
 app.get('/workloadcalc', workloadcalc.viewProject);
 app.get('/courseprofinfo',courseprofinfo.viewProject);
-app.get('/workloadcalc/addclasses', addclasses.viewProject)
+app.get('/addclasses', addclasses.viewProject)
 // Example route
 // app.get('/users', user.list);
 
