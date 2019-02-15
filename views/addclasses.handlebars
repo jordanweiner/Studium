@@ -5,6 +5,7 @@
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
 	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/addclasses.css" rel="stylesheet">
 	<link href="css/comparator.css" rel="stylesheet">
 
 	<script src="js/jquery-1.11.0.js"></script>
@@ -18,13 +19,11 @@
 	<h1>Classes</h1>
 
 	{{#each classes}}
-		<div class = "class" >
-		<courseid> {{courseid}} </courseid >
-		<coursenumber> {{coursenumber}} </coursenumber>
-
+		<div class="classes-container">
+			<h2><strong>{{courseid}}</strong></h2>
+			<h2>{{coursenumber}}</h2>
+		</div>
 	{{/each}}
-	
-	</div>
 </div>
 </body>
 
