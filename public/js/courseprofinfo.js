@@ -1,6 +1,13 @@
-$.getJSON( "data/data.json", function( json ) {
-    console.log( "JSON Data received, name is " + json.name);
-});
+// Call this function when the page loads (the "ready" event)
+$(document).ready(function() {
+	initializePage();
+})
+
+/*
+ * Function that is called when the document is ready.
+ */
+function initializePage() {
+}
 
 function getUserSearchInput() {
 	var x = document.getElementById("search-input").value;
