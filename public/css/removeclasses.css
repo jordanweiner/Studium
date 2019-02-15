@@ -1,0 +1,9 @@
+.classes-container {
+	margin: 4vw;
+	max-width: 100%;
+	overflow-x: hidden;
+}
+
+.classes-container h2 {
+	font-size: 5vw;
+}
