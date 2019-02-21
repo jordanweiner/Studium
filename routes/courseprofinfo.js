@@ -1,3 +1,5 @@
 exports.viewProject = function(req, res) { 
-	res.render('courseprofinfo');
+
+	var profinfo = require('../data/data.json');
+	res.render('courseprofinfo',profinfo);
 };
