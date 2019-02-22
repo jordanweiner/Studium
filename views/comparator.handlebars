@@ -16,9 +16,7 @@
 <div class="container comparator-page">
 	<a class="backButton" onclick="goBack()">Go back</a>
 	<h1>Comparator</h1>
-	<h2> Select a course: </h2>
-	<select id = "courseoptions" >
-
+	
 
 	<div class= "professor-windows">
 
@@ -32,14 +30,32 @@
   		<a href="Comparator" class="active">Comparator</a>
   		<a href="workloadcalc">Workload</a>
 	</div>
+	
+	<h2> Select a course: </h2>
+	<select id = "courseoptions" >
 
-      {{#each coursenumber}}
-  	<option value="a">{{courseid}}</option>
-       	{{/each}}
-       
+      {{#each Instructor}}
+
+      
+  	<option value={{course}}>{{course}}</option>
+
+        {{/each}}
+  	
+  	
 	</select>
+	<button type="button" onclick="continueCourse()">Find Course Professors >> </button>
+
+    <script>
+    	function continueCourse() {
+    		document.getElementById("")
+    	}
+
+    </script>
+  	
 
 </div>
+
+
 </body>
 
 </html>

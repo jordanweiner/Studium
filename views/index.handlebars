@@ -9,6 +9,8 @@
 
 	<script src="js/jquery-1.11.0.js"></script>
 	<script src="js/bootstrap.js"></script>
+	{{> facebook}}
+<script src="/js/facebook.js"></script>
 
 </head>
 
@@ -16,7 +18,10 @@
 <div class="container home-page">
 	<h1>Studium Login</h1>
 	<div class="log-form">
-  	<h2>Login to your account</h2>
+  	<h2 class = "facebookLogin">Please login to your account through Facebook
+  		<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+		</fb:login-button>
+	</h2>
   		<form>
     		<input type="text" title="username" placeholder="username" />
    			 <input type="password" title="username" placeholder="password" />
