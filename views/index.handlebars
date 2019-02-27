@@ -30,14 +30,16 @@
 	<h1>Studium Login</h1>
 	<div class="log-form">
   	<h2 class = "facebookLogin">Please login to your account through Facebook
-  		<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+  		<fb:login-button id="fb-button" scope="public_profile,email" onlogin="checkLoginState();">
 		</fb:login-button>
 	</h2>
-  		<form>
-    		<input type="text" title="username" placeholder="username" />
-   			 <input type="password" title="username" placeholder="password" />
-   			 <a class ="login" href="/home" > Login  </a>
-  			  <a class="forgot" href="">Forgot Username?</a>
+  		<form id="login">
+    		<div id="login-entries">
+	    		<input id="username" type="text" title="username" placeholder="username" />
+	   			<input id="password" type="password" title="username" placeholder="password" />
+	   		</div>
+   			<a class ="login-button" href="/home" > Login</a>
+			<a class="login-button" href="">Forgot Username</a>
   		</form>
 	</div>
 
