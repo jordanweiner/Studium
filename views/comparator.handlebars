@@ -24,7 +24,7 @@
 </head>
 
 <body>
-<div class="container comparator-page">
+<div class="container comparator-page" id = "allbody">
 	<a class="backButton" onclick="goBack()">Go back</a>
 	<h1>Comparator</h1>
 	
@@ -42,27 +42,46 @@
   		<a href="workloadcalc">Workload</a>
 	</div>
 	
-	<h2> Select a course: </h2>
-	<select id = "courseoptions" >
+	<h2> Letter of Professor Last Name: </h2>
+	<select id ="lnameletter">
+  <option value="a">A</option>
+  <option value="b">B</option>
+  <option value="c">C</option>
+  <option value="d">D</option>
+  <option value="e">E</option>
+  <option value="f">F</option>
+  <option value="g">G</option>
+  <option value="h">H</option>
+  <option value="i">I</option>
+  <option value="j">J</option>
+  <option value="k">K</option>
+  <option value="l">L</option>
+  <option value="m">M</option>
+  <option value="n">N</option>
+  <option value="o">O</option>
+  <option value="p">P</option>
+  <option value="q">Q</option>
+  <option value="r">R</option>
+  <option value="s">S</option>
+  <option value="t">T</option>
+  <option value="u">U</option>
+  <option value="v">V</option>
+  <option value="w">W</option>
+  <option value="x">X</option>
+  <option value="y">Y</option>
+  <option value="z">Z</option>
 
-      {{#each Instructor}}
 
-      
-  	<option value={{course}}>{{course}}</option>
+</select>
+  </div>
 
-        {{/each}}
+        
   	
   	
 	</select>
-	<button type="button" onclick="continueCourse()">Find Course Professors >> </button>
+	<button class="but" type="button" id="lnameprof"> Find Course Professors 
+	 </button>
 
-    <script>
-    	function continueCourse() {
-    		document.getElementById("")
-    	}
-
-    </script>
-  	
 
 </div>
 
