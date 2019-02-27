@@ -8,8 +8,23 @@
 	<link href="css/comparator.css" rel="stylesheet">
 
 	<script src="js/jquery-1.11.0.js"></script>
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<script src="js/bootstrap.js"></script>
 	<script src="js/comparator.js"></script>
+
+
+ <script>
+  $( function() {
+    var availableTags = cleandata.Instructors;
+      
+    
+    $( "#tags" ).autocomplete({
+      source: availableTags
+    });
+  } );
+
+</script>
 	<!-- Google Analytics -->
 	<script>
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -29,11 +44,7 @@
 	<h1>Comparator</h1>
 	
 
-	<div class= "professor-windows">
 
-		<prof> Professor 1 </prof>
-		<prof> Professor 2 </prof>
-	</div>
 
 	<div class="navbar">
   		<a href="Home">Home</a>
@@ -42,34 +53,6 @@
   		<a href="workloadcalc">Workload</a>
 	</div>
 	
-	<h2> Letter of Professor Last Name: </h2>
-	<select id ="lnameletter">
-  <option value="a">A</option>
-  <option value="b">B</option>
-  <option value="c">C</option>
-  <option value="d">D</option>
-  <option value="e">E</option>
-  <option value="f">F</option>
-  <option value="g">G</option>
-  <option value="h">H</option>
-  <option value="i">I</option>
-  <option value="j">J</option>
-  <option value="k">K</option>
-  <option value="l">L</option>
-  <option value="m">M</option>
-  <option value="n">N</option>
-  <option value="o">O</option>
-  <option value="p">P</option>
-  <option value="q">Q</option>
-  <option value="r">R</option>
-  <option value="s">S</option>
-  <option value="t">T</option>
-  <option value="u">U</option>
-  <option value="v">V</option>
-  <option value="w">W</option>
-  <option value="x">X</option>
-  <option value="y">Y</option>
-  <option value="z">Z</option>
 
 
 </select>
@@ -79,11 +62,18 @@
   	
   	
 	</select>
-	<button class="but" type="button" id="lnameprof"> Find Course Professors 
-	 </button>
+
 
 
 </div>
+  <div class="ui-widget">
+  <label for="tags"> Professor 1: </label>
+  <input id="tags">
+  <label for="tags"> Professor 2: </label>
+  <input id="tags"> 
+</div>
+ <button class="but" type="button" id="lnameprof"> Compare Professors
+	 </button>
 
 
 </body>
