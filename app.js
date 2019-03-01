@@ -41,7 +41,7 @@ if ('development' == app.get('env')) {
 
 app.get('/', index.view);
 app.get('/home', home.view);
-app.get('/comparator', comparator.viewProject);
+app.get('/comparator', comparator.view);
 app.get('/comparatorB', comparator.viewAlt);
 app.get('/workloadcalc', workloadcalc.viewProject);
 app.get('/courseprofinfo',courseprofinfo.viewProject);
