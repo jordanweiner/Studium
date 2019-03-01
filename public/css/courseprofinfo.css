@@ -79,3 +79,18 @@ h1 {
   color: white;
 }
 
+
+.search-form input {
+  display: inline-block;
+  float: left;
+}
+
+.search-button {
+  display: inline-block;
+  float: right;
+  background-color: gray;
+  padding: 4em;
+}
+
+
+
