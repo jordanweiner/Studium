@@ -10,7 +10,9 @@ var handlebars = require('express3-handlebars')
 
 var index = require('./routes/index');
 var home = require('./routes/home');
-var comparator = require('./routes/comparator');
+var comparator= require('./routes/comparator');
+var comparatorA= require('./routes/comparatorA');
+var comparatorB= require('./routes/comparatorB');
 var workloadcalc = require('./routes/workloadcalc');
 var courseprofinfo = require('./routes/courseprofinfo');
 var addclasses = require('./routes/addclasses')
@@ -41,7 +43,10 @@ if ('development' == app.get('env')) {
 
 app.get('/', index.view);
 app.get('/home', home.view);
-app.get('/comparator', comparator.viewProject );
+app.get('/comparator', comparator.viewProject);
+app.get('/comparatorA', comparatorA.viewProject );
+app.get('/comparatorB', comparatorB.viewProject );
+
 app.get('/workloadcalc', workloadcalc.viewProject);
 app.get('/courseprofinfo',courseprofinfo.viewProject);
 app.get('/addclasses', addclasses.viewProject)
