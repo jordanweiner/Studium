@@ -16,7 +16,8 @@
 
  <script>
   $( function() {
-    var availableTags = cleandata.Instructors;
+    var requiredtags = require("../data/cleandata")
+    var availableTags = requiredtags.Instructors
       
     
     $( "#tags" ).autocomplete({
@@ -69,13 +70,52 @@
   <div class="ui-widget">
   <label for="tags"> Professor 1: </label>
   <input id="tags">
-  <label for="tags"> Professor 2: </label>
-  <input id="tags"> 
+  <label for="tags2"> Professor 2: </label>
+  <input id="tags2"> 
 </div>
- <button class="but" type="button" id="lnameprof"> Compare Professors
+ <button class="but" onclick="displayProf()" type="button" id="lnameprof"> Compare Professors
 	 </button>
+<table id="displayproftable" style="display:none">
+  <tr>
+  </tr>
+  <tr>
+  	<td>Professor # </td>
+    <td>First Name</td>
+    <td>Last Name</td>
+    <td>Average GPA</td>
+    <td>Hours spent per week</td>
+    <td>% of students that recommend</td>
+  </tr>
+  <tr>
+  	<td> Professor 1 </td>
+    <td>Instructor1.firstname</td>
+    <td>Instructor1.lastname</td>
+    <td>Instructor1.GPA</td>
+    <td>Instructor1.Hoursperweek</td>
+    <td> 98% recommend </td>
+  </tr>
+  <tr>
+  	<td> Professor 2</td>
+  <td>Instructor2.firstname</td>
+    <td>Instructor2.lastname</td>
+    <td>Instructor2.GPA</td>
+    <td>Instructor2.Hoursperweek</td>
+    <td> 88% recommend </td>
+  </tr>
+</table>
 
 
+
+<prof id="prof1"></prof>
+<prof id="prof2"></prof>
+
+<script>
+	function displayProf(){
+		document.getElementById("displayproftable").style.display="block";
+
+	}
+
+</script>
 </body>
 
 </html>
