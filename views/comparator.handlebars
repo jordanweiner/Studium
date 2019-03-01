@@ -62,10 +62,16 @@
 	<h1>Comparator</h1>
 	
 	<div class="navbar">
-  		<a href="Home" class="home-button">Home</a>
-  		<a href="courseprofinfo">Course Info</a>
-  		<a href="Comparator" class="active">Comparator</a>
-  		<a href="workloadcalc">Workload</a>
+      {{#if viewAlt}}
+  		  <a href="courseprofinfo">Course Info</a>
+        <a href="Comparator" class="active">Comparator</a>
+        <a href="workloadcalc">Workload</a>
+      {{else}}
+        <a href="Home" class="home-button">Home</a>
+    		<a href="courseprofinfo">Course Info</a>
+    		<a href="Comparator" class="active">Comparator</a>
+    		<a href="workloadcalc">Workload</a>
+      {{/if}}
 	</div>
 </div>	
   	
