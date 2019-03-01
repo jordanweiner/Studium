@@ -2,12 +2,12 @@ function goBack() {
 	window.history.back();
 }
 
-function lnameLetterButtonPressed() {
-	var chosenletter = document.getElementById('lnameletter');
-	var value = chosenletter[chosenletter.selectedIndex].value;
-	$(".container comparator-page").hide();
+function initializePage() {
+	$(".home-button").click(buttonClick);
 }
 
-$(".but").click(lnameLetterButtonPressed);
-
-document.getElementById('lnameprof').addEventListener('click',lnameLetterButtonPressed);
+function buttonClick(e) {
+	console.log("button clicked");
+	e.preventDefault();
+	ga("send", "event", "HomeButton", "click");
+}

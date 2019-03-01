@@ -1,5 +1,21 @@
 <html>
 <head>
+
+  <!-- Google Analytics Content Experiment code -->
+<script>function utmx_section(){}function utmx(){}(function(){var
+k='190645090-2',d=document,l=d.location,c=d.cookie;
+if(l.search.indexOf('utm_expid='+k)>0)return;
+function f(n){if(c){var i=c.indexOf(n+'=');if(i>-1){var j=c.
+indexOf(';',i);return escape(c.substring(i+n.length+1,j<0?c.
+length:j))}}}var x=f('__utmx'),xx=f('__utmxx'),h=l.hash;d.write(
+'<sc'+'ript src="'+'http'+(l.protocol=='https:'?'s://ssl':
+'://www')+'.google-analytics.com/ga_exp.js?'+'utmxkey='+k+
+'&utmx='+(x?x:'')+'&utmxx='+(xx?xx:'')+'&utmxtime='+new Date().
+valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
+'" type="text/javascript" charset="utf-8"><\/sc'+'ript>')})();
+</script><script>utmx('url','A/B');</script>
+<!-- End of Google Analytics Content Experiment code -->
+
 	<title>Comparator</title>
 
 	<link href="css/bootstrap.min.css" rel="stylesheet">
@@ -15,15 +31,15 @@
 
 
  <script>
-  $( function() {
-    var requiredtags = require("../data/cleandata")
-    var availableTags = requiredtags.Instructors
+  //$( function() {
+    //var requiredtags = require("../data/cleandata");
+    //var availableTags = requiredtags.Instructors;
       
     
-    $( "#tags" ).autocomplete({
-      source: availableTags
-    });
-  } );
+    //$( "#tags" ).autocomplete({
+    //  source: availableTags
+    //});
+  //} );
 
 </script>
 	<!-- Google Analytics -->
@@ -45,7 +61,7 @@
 	<h1>Comparator</h1>
 	
 	<div class="navbar">
-  		<a href="Home">Home</a>
+  		<a href="Home" class="home-button">Home</a>
   		<a href="courseprofinfo">Course Info</a>
   		<a href="Comparator" class="active">Comparator</a>
   		<a href="workloadcalc">Workload</a>

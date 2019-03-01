@@ -11,7 +11,6 @@ var handlebars = require('express3-handlebars')
 var index = require('./routes/index');
 var home = require('./routes/home');
 var comparator= require('./routes/comparator');
-var comparatorA= require('./routes/comparatorA');
 var comparatorB= require('./routes/comparatorB');
 var workloadcalc = require('./routes/workloadcalc');
 var courseprofinfo = require('./routes/courseprofinfo');
