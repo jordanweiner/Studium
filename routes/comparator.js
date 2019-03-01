@@ -5,7 +5,7 @@ exports.viewProject = function(req, res) { 
 	res.render("comparator", cleandata);
 };
 
-exports.viewAlt = function(request, response){
+exports.viewAlt = function(req, res){
 	cleandata["viewAlt"] = true;
 	res.render("comparator", cleandata);
 };
