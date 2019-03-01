@@ -3,7 +3,7 @@ function goBack() {
 }
 
 function initializePage() {
-	$(".home-button").click(buttonClick);
+	$(".backButtonComparator").click(buttonClick);
 }
 
 function buttonClick(e) {
