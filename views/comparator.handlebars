@@ -30,6 +30,7 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 	<script src="js/comparator.js"></script>
 
 
+
   <script>
     $( function() {
       
@@ -58,6 +59,9 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
           source: availableTags
       });
     });
+   
+
+</script>
   </script>
 	<!-- Google Analytics -->
 	<script>
@@ -90,7 +94,40 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
       {{/if}}
 	</div>
 </div>	
-  	
+  	 <script>
+  $( function() {
+    
+    var availableTags = [
+     "Scott Klemmer",
+      "Don Norman",
+      "Philip Guo",
+      "Eran Mukamel",
+      "Drew Hoffman",
+      "Francesco Paesani",
+      "Mary Boyle",
+      "Taylor Scott",
+      "Lara Rangel",
+    "Bradley Voytek",
+      "Kim Albizati",
+      "Robert Ternansky",
+      "Rick Ord",
+      "Gary Gilespie",
+     
+    ];
+      
+     $( "#tags" ).autocomplete({
+      source: availableTags
+    });
+     $( "#tags2" ).autocomplete({
+      source: availableTags
+    });
+   
+  })
+
+  
+  
+
+</script>
 <div>
   <div class="ui-widget">
   <label for="tags"> Professor 1: </label>
@@ -113,7 +150,7 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
   </tr>
   <tr>
   	<td> Professor 1 </td>
-    <td>Gary/td>
+    <td>Gary </td>
     <td>Gilespie</td>
     <td>2.3</td>
     <td>12</td>
