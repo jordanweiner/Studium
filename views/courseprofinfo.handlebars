@@ -21,8 +21,9 @@
 	<div class="search-container">
 		<form class="search-form" role="search" method="get"">
 			<input type="text" placeholder="Enter course" id="search-input">
-			<a class="search-button" onclick="renderData()">Search</a>
 		</form>
+
+		<button class="but" onclick="renderData()" type="button" id="searchnameprof">Search</button>
 
 		<div class="profiles-container">
 
@@ -32,7 +33,7 @@
 				<h2><strong>{{name}}</strong></h2></a>
 			</div>
 		{{/each}}
-
+ 
 		
 		</div>
 	</div>
