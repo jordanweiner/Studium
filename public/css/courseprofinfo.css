@@ -81,8 +81,13 @@ h1 {
 
 
 .search-form input {
+  padding: 12px 20px;
+  margin: 8px 0;
   display: inline-block;
-  float: left;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size: 3em;
+
 }
 
 .search-button {
@@ -92,5 +97,18 @@ h1 {
   padding: 4em;
 }
 
+.but {
+    background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  
 
+}
+
+.searchbut {border-radius: 12px;}
 
