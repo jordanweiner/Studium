@@ -11,31 +11,30 @@
 	<script src="js/bootstrap.js"></script>
 	{{> facebook}}
 	<script src="/js/facebook.js"></script>
-	
-	
 </head>
 
 <body>
 <div class="container home-page">
 	<h1>Studium Login</h1>
 	<div class="log-form">
-  	<h2 class = "facebookLogin">Please login to your account through Facebook
-  		<fb:login-button id="fb-button" scope="public_profile,email" onlogin="checkLoginState();">
-		</fb:login-button>
-	</h2>
-  		<form id="login">
-    		<div id="login-entries">
-	    		<input id="username" type="text" title="username" placeholder="username" />
-	   			<input id="password" type="password" title="username" placeholder="password" />
-	   		</div>
-   			<a class ="login-button" href="/home" > Login</a>
-			<a class="login-button" href="">Forgot Username</a>
-  		</form>
+		<fb:login-button id="fb-button" scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button>
+
+		<div class="container">
+		    <label for="uname"><b>Username</b></label>
+		    <input type="text" placeholder="Enter Username" name="uname" required>
+
+		    <label for="psw"><b>Password</b></label>
+		    <input type="password" placeholder="Enter Password" name="psw" required>
+		        
+		    <a href="/home" class="login-button"><button type="submit">Login</button></a>
+		  </div>
+
+		  <div class="container" style="background-color:#f1f1f1">
+		    <button type="button" class="cancelbtn">Cancel</button>
+		    <span class="psw"><a href="#">Forgot password?</a></span>
+		  </div>
+		</form>
 	</div>
-
-
-
-
 </div>
 </body>
 

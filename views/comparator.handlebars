@@ -31,39 +31,40 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 	<script src="js/comparator.js"></script>
 
 
- <script>
-  $( function() {
-    
-    var availableTags = [
-     "Scott Klemmer",
-      "Don Norman",
-      "Philip Guo",
-      "Eran Mukamel",
-      "Drew Hoffman",
-      "Francesco Paesani",
-      "Mary Boyle",
-      "Taylor Scott",
-      "Lara Rangel",
-    "Bradley Voytek",
-      "Kim Albizati",
-      "Robert Ternansky",
-      "Rick Ord",
-      "Gary Gilespie",
-     
-    ];
-      
-    
-    $( "#tags" ).autocomplete({
-      source: availableTags
-    });
-  }
 
-  $( "#tags2" ).autocomplete({
-      source: availableTags
+  <script>
+    $( function() {
+      
+      var availableTags = [
+        "Scott Klemmer",
+        "Don Norman",
+        "Philip Guo",
+        "Eran Mukamel",
+        "Drew Hoffman",
+        "Francesco Paesani",
+        "Mary Boyle",
+        "Taylor Scott",
+        "Lara Rangel",
+        "Bradley Voytek",
+        "Kim Albizati",
+        "Robert Ternansky",
+        "Rick Ord",
+        "Gary Gilespie",
+      ];  
+      
+      $( "#tags" ).autocomplete({
+        source: availableTags
+      });
+
+      $("#tags2").autocomplete({
+          source: availableTags
+      });
     });
    
 
 </script>
+  </script>
+>>>>>>> 
 	<!-- Google Analytics -->
 	<script>
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
