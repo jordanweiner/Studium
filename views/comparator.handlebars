@@ -57,9 +57,6 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
           source: availableTags
       });
     });
-   
-
-</script>
   </script>
 	<!-- Google Analytics -->
 	<script>
@@ -92,48 +89,20 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
       {{/if}}
 	</div>
 </div>	
-  	 <script>
-  $( function() {
-    
-    var availableTags = [
-     "Scott Klemmer",
-      "Don Norman",
-      "Philip Guo",
-      "Eran Mukamel",
-      "Drew Hoffman",
-      "Francesco Paesani",
-      "Mary Boyle",
-      "Taylor Scott",
-      "Lara Rangel",
-      "Bradley Voytek",
-      "Kim Albizati",
-      "Robert Ternansky",
-      "Rick Ord",
-      "Gary Gilespie",
-    ];
-      
-     $( "#tags" ).autocomplete({
-      source: availableTags
-    });
-     $( "#tags2" ).autocomplete({
-      source: availableTags
-    });
-   
-  })
-</script>
 
-<div>
+<div style="margin-top:6%">
   <div class="ui-widget">
     <div class="profSearch">
-      <label for="tags">Professor 1:</label>
+      <label for="tags">Professor 1</label>
       <input id="tags">
     </div>
     <div class="profSearch">
-      <label for="tags">Professor 2:</label>
+      <label for="tags">Professor 2</label>
       <input id="tags2">
     </div> 
 </div>
- <button class="but" onclick="displayProf()" type="button" id="lnameprof">Compare Professors</button>
+
+<button class="but" onclick="displayProf()" type="button" id="lnameprof">Compare Professors</button>
  
 <table id="displayproftable" style="display:none">
   <tr>
@@ -170,9 +139,7 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 <script>
 	function displayProf(){
 		document.getElementById("displayproftable").style.display="block";
-
 	}
-
 </script>
 </body>
 

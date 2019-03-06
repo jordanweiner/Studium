@@ -62,20 +62,19 @@ h1 {
 input {
   padding: 12px 20px;
   margin: 8px 0;
-  display: inline-block;
+  display: block;
   border: 1px solid #ccc;
   box-sizing: border-box;
   font-size: 3em;
+  width: 490px;
 }
 
 label {
   font-size: 3em;
   margin: 5% 3% 0% 10%;
+  display: block;
 }
 
 .profSearch {
-  
+  float: left;
 }
-
-
-
