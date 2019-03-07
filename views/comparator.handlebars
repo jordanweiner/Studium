@@ -82,7 +82,7 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
         <a href="Comparator" class="active">Comparator</a>
         <a href="workloadcalc">Workload</a>
       {{else}}
-        <a href="Home" class="home-button">Home</a>
+        <a href="Home" class="home-button" onclick="ga( 'create', 'UA-134936315-2', 'auto' ); ga('send', 'event', "HomeButton", "click");">Home</a>
     		<a href="courseprofinfo">Course Info</a>
     		<a href="Comparator" class="active">Comparator</a>
     		<a href="workloadcalc">Workload</a>

@@ -1,13 +1,15 @@
 function goBack() {
+	ga( 'create', 'UA-134936315-2', 'auto' ); 
+	ga('send', 'event', "BackButton", "click");
 	window.history.back();
 }
 
 function initializePage() {
-	$(".backButtonComparator").click(buttonClick);
+	//$(".backButtonComparator").click(buttonClick);
 }
 
-function buttonClick(e) {
+/*function buttonClick(e) {
 	console.log("button clicked");
 	e.preventDefault();
 	ga("send", "event", "HomeButton", "click");
-}
+}*/
