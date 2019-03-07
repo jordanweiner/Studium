@@ -1,6 +1,6 @@
 function goBack() {
 	ga( 'create', 'UA-134936315-2', 'auto' ); 
-	ga('send', 'event', "HomeButton", "click");
+	ga('send', 'event', "HomeButton", "Click");
 	window.history.back();
 }
 
