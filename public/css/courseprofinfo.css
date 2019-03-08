@@ -87,6 +87,7 @@ h1 {
   border: 1px solid #ccc;
   box-sizing: border-box;
   font-size: 3em;
+  text-align:center;
 
 }
 
@@ -96,14 +97,14 @@ h1 {
   background-color: gray;
   padding: 4em;
 }
-
+.coursebut{text-align:center;}
 .but {
   background-color: #4CAF50;
   border: none;
   color: white;
-  padding: 20px;
+  padding: 40px;
   text-align: center;
-  display: block;
+  display: inline-block;
 
   font-size: 16px;
   margin: 2%;
