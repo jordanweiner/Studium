@@ -102,8 +102,8 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 
     </div> 
 </div>
-<button class="but searchbut" onclick="displayProf()" type="button" id="searchnameprof">Search</button>
- 
+
+
 <table id="displayproftable" style="display:none">
   <tr>
   </tr>
@@ -135,7 +135,9 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 
 <prof id="prof1"></prof>
 <prof id="prof2"></prof>
-
+<div class ="compbut">
+<button class="but searchbut" onclick="displayProf()" type="button" id="searchnameprof" text-align="center">Search</button>
+ </div>
 <script>
 	function displayProf(){
 		document.getElementById("displayproftable").style.display="block";
