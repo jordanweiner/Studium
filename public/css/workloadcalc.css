@@ -46,23 +46,6 @@ li {
 	font-size: 3em;
 }
 
-
-#addclassbutton {
-	float:right;
-	margin-top: -4.2%;
-	border:2px solid black;
-	color: black;
-	font-size: 2em;
-}
-
-#removeclassbutton {
-	float:left;
-	margin-top: -4.2%;
-	border:2px solid black;
-	color: black;
-	font-size: 2em;
-}
-
 .changeclasses {
 	display: inline;
 }
@@ -139,4 +122,7 @@ li {
 
 }
 
-.removeclass {border-radius: 12px;}
+.removeclass {
+	background-color: red;
+	border-radius: 12px;
+}
