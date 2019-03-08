@@ -1,4 +1,4 @@
-h1 {
+  h1 {
   text-align: center;
   font-size: 7vw;
   margin: 7vw;
@@ -47,6 +47,7 @@ h1 {
 }
 
 .search-container {
+  text-align:center;
   overflow: hidden;
 }
 
@@ -80,4 +81,22 @@ h1 {
 
 }
 
-.searchbut {border-radius: 12px;}
+.testbut{text-align:center;}
+
+.buttonaddsearch{
+  border-radius: 12px;
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 40px;
+  text-align: center;
+  display: inline-block;
+  font-size: 40px;
+  margin: 4px 2px;
+
+
+  
+
+
+
+}
