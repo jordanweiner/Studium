@@ -82,6 +82,7 @@ button:hover {
 .login-button {
   text-decoration: none;
   color: white;
+  background-color: #4CAF50
 }
 
 /* Extra style for the cancel button (red) */

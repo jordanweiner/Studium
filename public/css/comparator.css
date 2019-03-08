@@ -82,8 +82,12 @@ label {
 .but {
   background-color: #4CAF50;
   border: none;
+<<<<<<< HEAD
   color: white;
   padding: 40px;
+=======
+  padding: 20px;
+>>>>>>> 1235e3b767d85be48cb8ed5e749a3100ba46564e
   text-align: center;
   display: block;
 
