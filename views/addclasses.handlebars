@@ -11,6 +11,46 @@
 	<script src="js/jquery-1.11.0.js"></script>
 	<script src="js/bootstrap.js"></script>
 	<script src="js/addclasses.js"></script>
+ 	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	
+<script>
+  $( function() {
+    var availableTags = [
+      "ANTH - 100",
+      "ANTH - 110",
+      "AWP - 1",
+      "BICD - 100",
+      "BILD - 1",
+      "BILD - 2",
+      "BILD - 3",
+      "BIMM - 100",
+      "COGS - 1",
+      "COGS - 17",
+      "COGS - 100",
+      "COGS - 120",
+      "COGS - 121",
+      "CSE - 11",
+      "CSE - 12",
+      "CSE - 15L",
+      "CSE - 100",
+      "CSE - 101",
+      "HILD - 7A",
+      "HILD - 7B",
+      "HILD - 7C",
+      "MCWP - 40",
+      "MCWP - 50",
+      "WCWP - 40"
+
+    ];
+    $( "#tags" ).autocomplete({
+      source: availableTags
+    });
+  } );
+  </script>
+
+
 </head>
 
 <body>
@@ -26,18 +66,26 @@
 
 
 <div class="search-container">
-		<form class="search-form" role="search" method="get"">
-		<input type="text" placeholder="Enter course" id="search-input">
-
-		</form>
-
+	<div class="ui-widget">
+      <input id="tags" placeholder="Enter Course">
+    </div>
 		<div class="profiles-container">
 
 		</div>
 
 	</div>
+
 <div class = "testbut" >
 	<button class="buttonaddsearch" type="button" id="addclasssearch">Search</button>
+</div>
+
+<div class = "navbaraddcenter">
+	<div class="navbaradd">
+  		<a href="Home">Home</a>
+  		<a href="courseprofinfo">Course Info</a>
+  		<a href="Comparator">Comparator</a>
+  		<a href="workloadcalc" class="active">Workload</a>
+	</div>
 </div>
 </body>
 
